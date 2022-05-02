@@ -1,0 +1,92 @@
+#playground
+{
+    height: 609px;
+    width: 609px;
+    display: table;
+}
+
+.row {
+    float: left;
+}
+
+.pixel
+{
+    height: 200px;
+    width: 200px;
+    border: solid 1px black;
+    border-color: darkolivegreen;
+    background: yellowgreen;
+    color: darkolivegreen;
+
+    display: table-cell;
+    vertical-align: middle;
+
+    font-size: 150px;
+    font-style: normal;
+
+    text-align: center;
+    text-decoration: black;
+}
+
+.red {
+    background: lightcoral;
+    color: crimson;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.information {
+    position: absolute;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.parent {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.myButton{
+    margin-top: 30px;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #000;
+    background-color: yellowgreen;
+}
+
+.result{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.result span{
+    color: crimson;
+}
+
+
+@media screen and (max-width: 1120px){
+    .information {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .myButton {
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (min-width: 800px){
+    .myButton:hover{
+        color: #fff;
+        background-color: darkolivegreen;
+    }
+}

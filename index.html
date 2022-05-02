@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link href="game.css" media="all" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/icon.jpg">
+    <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+    <div class="information">
+        <h1>Tic-Tac-Toe</h1>
+        <h2>Game Score</h2>
+        <div class="parent">
+            <div>
+                <strong>Crosses</strong> - <span id="crosser"> 0</span>
+            </div>
+            <div>
+                <strong>Zeros</strong> - <span id="zeros">0</span>
+            </div>
+        </div>
+
+        <div>
+            <label for="bot">Play with bot</label>
+            <input id="bot" type="checkbox">
+        </div>
+
+        <p><strong>Turn</strong> - <span id="turn"></span></p>
+
+        <div>
+            <button id="newGame" class="myButton"> New game </button>
+            <button id="newRound" class="myButton"> New round </button>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div id="playground">
+    
+            <div class="row">
+                <div id="1x1" class="pixel"></div>
+                <div id="1x2" class="pixel"></div>
+                <div id="1x3" class="pixel"></div>
+            </div>
+    
+            <div class="row">
+                <div id="2x1" class="pixel"></div>
+                <div id="2x2" class="pixel"></div>
+                <div id="2x3" class="pixel"></div>
+            </div>
+    
+            <div class="row">
+                <div id="3x1" class="pixel"></div>
+                <div id="3x2" class="pixel"></div>
+                <div id="3x3" class="pixel"></div>
+            </div>
+    
+        </div>
+    </div>
+
+    <div class="result"></div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
