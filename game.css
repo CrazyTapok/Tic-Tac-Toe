@@ -41,6 +41,7 @@
 .information {
     position: absolute;
     text-align: center;
+    min-width: 240px;
     padding: 0 30px;
 }
 
@@ -72,7 +73,7 @@
 }
 
 
-@media screen and (max-width: 1120px){
+@media screen and (max-width: 1230px){
     .information {
         position: static;
         margin-bottom: 20px;

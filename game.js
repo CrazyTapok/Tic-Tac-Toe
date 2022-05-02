@@ -7,6 +7,8 @@ const bot = document.querySelector('#bot')
 const gameResult = document.querySelector('.result')
 const turn = document.querySelector('#turn')
 
+
+
 let currentTurn = ['X', 'O']
 let endGame = false
 let player = true
@@ -28,14 +30,14 @@ pixel.forEach(item => {
                 currentTurn.reverse()
                 turn.innerHTML = currentTurn[0]
 
-                if (bot.checked)
+                if (bot.value === 'bot')
                     player = false
 
                 checkField()
             }
         }
         
-        if (bot.checked) {
+        if (bot.value === 'bot') {
             if (!endGame && !player) {
                 setTimeout(() => {
                     botMove()
@@ -131,7 +133,7 @@ newRound.addEventListener('click', () => {
 newGame.addEventListener('click', () => {
     clear()
     bot.closest('div').hidden = false
-    bot.checked = false
+    bot.value = 'player'
     crosser.innerHTML = counter_X = 0
     zeros.innerHTML = counter_O = 0
 })
